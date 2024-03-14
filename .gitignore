@@ -1,0 +1,22 @@
+# build output
+dist/
+
+# dependencies
+node_modules/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# auth
+.wwebjs_auth
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
