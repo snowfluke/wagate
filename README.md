@@ -72,6 +72,9 @@ sudo apt-get update && sudo apt-get install -y \
 9. After that you will need to scan the QR that is printed to the terminal
 10. You're basically done, or if you want to be more robust, you can use `pm2` for a better process management
 
+## Removing delay
+You can commented out this line https://github.com/snowfluke/wagate/blob/fdbf04baae84d2d8414f03e67df218cbfab1de0b/lib/wagate-client.ts#L57 and also this line https://github.com/snowfluke/wagate/blob/fdbf04baae84d2d8414f03e67df218cbfab1de0b/lib/wagate-client.ts#L62
+
 ## Endpoints
 
 - [GET] /api/v1/
