@@ -10,7 +10,7 @@ import logger from "../utils/log.util";
 
 const CLIENT_OPTIONS: ClientOptions = {
   authStrategy: new LocalAuth(),
-  webVersion: "2.2323.4",
+  webVersion: "2.2409.2",
   webVersionCache: {
     type: "remote",
     remotePath:
