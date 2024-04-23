@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import { app } from "./app";
 import { WagateClient } from "./lib/wagate-client";
 import logger from "./utils/log.util";
-
+import {cron5min} from "./utils/cron.util";
 dotenv.config();
 const PORT = process.env.PORT || 4321;
 
@@ -16,6 +16,7 @@ app.listen(PORT, async () => {
 
   logger.info("Starting the bot...");
   await client.init();
+  cron5min.start();
 });
 
 // Global error catch
