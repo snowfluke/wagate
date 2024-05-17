@@ -10,11 +10,13 @@ import logger from "../utils/log.util";
 
 const CLIENT_OPTIONS: ClientOptions = {
   authStrategy: new LocalAuth(),
-  webVersion: "2.2409.2",
+
+  webVersion: "2.3000.1012750699",
+
   webVersionCache: {
     type: "remote",
     remotePath:
-      "https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/{version}.html",
+      "https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.3000.1012750699-alpha.html",
   },
   puppeteer: {
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
