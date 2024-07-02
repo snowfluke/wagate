@@ -1,6 +1,6 @@
 # WA-GATE
 
-A very simple typescript whatsapp gateway via expressjs REST API using whatsapp-web.js
+A very simple typescript whatsapp gateway via expressjs REST API using whatsapp-web.js. For more process-oriented whatsapp bot without a REST API, you can visit: https://github.com/snowfluke/wajs-bot-boilerplate
 
 ## Contribution
 
