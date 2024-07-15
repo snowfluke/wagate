@@ -41,16 +41,15 @@ RUN apt-get update && apt-get install -y \
     xdg-utils \
     wget
 
-RUN npm install -g pnpm
 
 WORKDIR /app
 
 COPY . .
 
-RUN pnpm install
+RUN npm install
 
-RUN pnpm run build
+RUN npm run build
 
 EXPOSE 3000
 
-CMD ["pnpm", "start"]
+CMD ["npm", "run", "start"]
