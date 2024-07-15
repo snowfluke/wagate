@@ -1,6 +1,6 @@
 # WA-GATE
 
-A very simple typescript whatsapp gateway via expressjs REST API using whatsapp-web.js. 
+A very simple typescript whatsapp gateway via expressjs REST API using whatsapp-web.js.
 
 - For more process-oriented whatsapp bot without a REST API, you can visit: https://github.com/snowfluke/wajs-bot-boilerplate
 - For dial-based bot whatsapp, visit: https://github.com/snowfluke/dial-wabot-boilerplate
@@ -21,7 +21,7 @@ Any features request and contribution are welcome! ^\_^
 ### Installation
 
 1. Node.js v20+ , I've setups to 20 in package.json, you can change it but generally it works in Node.js v12 higher
-2. pnpm package manager, because why not
+2. npm package manager
 3. You can go for docker for an easy setups, or if you deploy it manually you will need to install Google Chrome
 4. On an Ubuntu server, you will need to run this command:
 
@@ -69,13 +69,14 @@ sudo apt-get update && sudo apt-get install -y \
 ```
 
 5. `cd` into the project directory
-6. run `pnpm install`
-7. run `pnpm build`
-8. run `pnpm start`
+6. run `npm install`
+7. run `npm run build`
+8. run `npm run start`
 9. After that you will need to scan the QR that is printed to the terminal
 10. You're basically done, or if you want to be more robust, you can use `pm2` for a better process management
 
 ## Removing delay
+
 You can commented out this line https://github.com/snowfluke/wagate/blob/fdbf04baae84d2d8414f03e67df218cbfab1de0b/lib/wagate-client.ts#L57 and also this line https://github.com/snowfluke/wagate/blob/fdbf04baae84d2d8414f03e67df218cbfab1de0b/lib/wagate-client.ts#L62
 
 ## Endpoints
