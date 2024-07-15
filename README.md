@@ -161,3 +161,12 @@ Response:
 | 429  | TOO MANY REQUEST      |
 | 500  | INTERNAL SERVER ERROR |
 | 503  | SERVICE UNAVAILABLE   |
+
+# Debugging
+
+- Delete `.wwebjs_auth` folder
+- Delete `node_modules` folder
+- Delete `package-lock.json` file
+- Logout the linked devices on your Whatsapp
+- Remove `whatsapp-web.js` from `package.json`
+- Run `npm install github:pedroslopez/whatsapp-web.js#webpack-exodus`
