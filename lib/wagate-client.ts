@@ -1,38 +1,13 @@
-import qrcode from "qrcode-terminal";
-import {
-  Client,
-  ClientOptions,
-  LocalAuth,
-  MessageMedia,
-} from "whatsapp-web.js";
+import { MessageMedia } from "whatsapp-web.js";
+import { SClient, onReady } from "wwjs-stable-client";
 import { Helper } from "../utils/helper.util";
 import logger from "../utils/log.util";
 
-const CLIENT_OPTIONS: ClientOptions = {
-  authStrategy: new LocalAuth(),
-  webVersion: "2.3000.1012972578-alpha",
-  webVersionCache: {
-    type: "remote",
-    remotePath:
-      "https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/{version}.html",
-  },
-  puppeteer: {
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  },
-};
-
 export class WagateClient {
-  constructor(
-    private client = new Client(CLIENT_OPTIONS),
-    private helper = new Helper()
-  ) {}
+  constructor(private client = SClient, private helper = new Helper()) {}
 
   async init() {
-    this.client.on("qr", (qr) => {
-      qrcode.generate(qr, { small: true });
-    });
-
-    this.client.on("ready", () => {
+    onReady(() => {
       logger.info("The bot is ready");
     });
 

@@ -22,10 +22,9 @@
     "helmet": "^7.1.0",
     "multer": "1.4.5-lts.1",
     "path": "^0.12.7",
-    "qrcode-terminal": "^0.12.0",
     "tesseract.js": "^5.0.4",
-    "whatsapp-web.js": "github:pedroslopez/whatsapp-web.js#webpack-exodus",
-    "winston": "^3.11.0"
+    "winston": "^3.11.0",
+    "wwjs-stable-client": "^1.0.4"
   },
   "devDependencies": {
     "@types/compression": "^1.7.5",
