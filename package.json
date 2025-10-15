@@ -24,7 +24,7 @@
     "path": "^0.12.7",
     "tesseract.js": "^5.0.4",
     "winston": "^3.11.0",
-    "wwjs-stable-client": "^1.0.4"
+    "wwjs-stable-client": "^3.2.0"
   },
   "devDependencies": {
     "@types/compression": "^1.7.5",
