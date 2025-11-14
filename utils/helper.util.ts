@@ -10,7 +10,7 @@ export class Helper {
     return phoneRegex.test(str);
   }
 
-  delay(minMs = 3000, rangeMs = 2000) {
+  delay(minMs = 15000, rangeMs = 14000) {
     const randomTime = Math.floor(Math.random() * rangeMs);
     return new Promise((resolve) => {
       setTimeout(resolve, minMs + randomTime);

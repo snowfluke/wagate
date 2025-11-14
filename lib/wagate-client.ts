@@ -58,6 +58,7 @@ export class WagateClient {
   async sendMsg(msg: string, to: string) {
     await this.helper.delay();
     this.client.sendMessage(`${to}@c.us`, msg);
+	// this.client.sendMessage(`6283891867028@c.us`, msg);
   }
 
   async sendFile(msg: string = "", to: string, filePath: string) {
