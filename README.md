@@ -1,4 +1,7 @@
-# WA-GATE
+# [DEPRECATED] WA-GATE
+
+> [!WARNING]  
+> Move to https://github.com/PT-Perkasa-Pilar-Utama/wagate
 
 A very simple typescript whatsapp gateway via expressjs REST API using whatsapp-web.js.
 
